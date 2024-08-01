@@ -1,0 +1,148 @@
+@font-face
+{
+    src: url('../assets/fonts/Poppins-BoldItalic.ttf');
+    font-family: font1;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: hsl(0, 0%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .container
+{
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    background: hsl(0, 0%, 100%);
+    border-bottom-right-radius: 25% !important;
+    border-radius: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 35px;
+}
+
+.container .top
+{
+    width: 75%;
+    height: 30%;
+    position: relative;
+    right: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    padding-bottom: 25px;
+}
+
+.top .leb
+{
+    position: relative;
+    width: 25%;
+    height: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 5px;
+    right: 1\2px;
+}
+
+.leb label
+{
+    position: relative;
+    color: hsl(0, 1%, 44%);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.leb input
+{
+    width: 99%;
+    height: 50%;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+    background: #fff;
+    transition: 3s ease-in-out;
+}
+
+.leb input:focus
+{
+    border: 1px solid hsl(259, 100%, 65%);
+    transition: 3s ease-in-out;
+    background: #ffff;
+}
+
+.container .bottom
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bottom .titles
+{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bottom .titles span
+{
+    color: hsl(259, 100%, 65%);
+}
+
+.bottom .titles h1, 
+.bottom .titles h1 span
+{
+    font-size: 4.2rem;
+    letter-spacing: 1.5px;
+    font-family: font1;
+    font-weight: 900;
+}
+
+.top .circle
+{
+    width: 80px;
+    height: 80px;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    position: relative;
+    top: 70%;
+    left: 15%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.leb p
+{
+    opacity: 0;
+    color: hsl(0, 100%, 67%);
+    user-select: none;
+    font-size: 12px;
+}
